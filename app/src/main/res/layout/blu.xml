@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343434">
+
+    <ToggleButton
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="New ToggleButton"
+        android:id="@+id/bluackapa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonshape"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Durumu.."
+        android:id="@+id/bludurum"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bluackapa"
+        android:layout_toEndOf="@+id/bluackapa"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/bludurum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@id/bludurum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+        </ListView>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:textStyle="italic"
+        android:id="@+id/logoutt"
+        android:layout_above="@+id/scrollView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="35dp" />
+
+</RelativeLayout>

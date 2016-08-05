@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:textStyle="bold"
+        android:id="@+id/logout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Listele"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/listele"
+        android:layout_below="@+id/logout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="10dp"/>
+    <FrameLayout
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/listele"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonshape2"
+        android:id="@+id/frameLayout">
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/listele"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" /></FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cihaz Listesi.."
+        android:textStyle="bold"
+        android:id="@+id/kulbilgileri"
+        android:layout_above="@+id/frameLayout"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
